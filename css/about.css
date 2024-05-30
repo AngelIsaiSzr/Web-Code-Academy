@@ -239,6 +239,7 @@ body {
     grid-template-columns: 1fr;
     gap: 1em;
     align-items: center;
+    padding: 100px 10px;
 }
 
 .knowledge__picture {
