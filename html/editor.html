@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Code Academy</title>
+    <script src="https://kit.fontawesome.com/cf04bd9cb6.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/editor.css">
+</head>
+
+<body>
+    <section class="hero">
+        <nav class="nav">
+            <div class="left-nav">
+                <h2>Web Code Academy</h2>
+            </div>
+            <div class="right-nav">
+                <a href="../index.html" class="house nav__links">
+                    <i class="fa-solid fa-house"></i>
+                </a>
+                <a href="#" onclick="rotate()" class="rotate-btn nav__links">
+                    <i class="fa-sharp fa-solid fa-rotate"></i>
+                </a>
+                <a href="javascript:void(0);" data-id="img-btn" class="img-btn nav__links" id="img-btn">
+                    <i class="fa-solid fa-circle-half-stroke"></i>
+                </a>
+            </div>
+        </nav>
+
+        <div class="container-editor">
+            <div class="left-bar">
+
+                <label class="name-language">
+                    <i class="fa-brands fa-html5"></i>
+                    HTML
+                </label>
+                <div class="line-numbers-container">
+                    <div class="line-numbers" id="line-numbers-html"></div>
+                    <textarea id="html-code" onkeyup="run(); updateLineNumbersHtml();" spellcheck="false"></textarea>
+                </div>
+
+                <label class="name-language">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    CSS
+                </label>
+                <div class="line-numbers-container">
+                    <div class="line-numbers" id="line-numbers-css"></div>
+                    <textarea id="css-code" onkeyup="run(); updateLineNumbersCss();" spellcheck="false"></textarea>
+                </div>
+
+                <label class="name-language">
+                    <i class="fa-brands fa-js"></i>
+                    JavaScript
+                </label>
+                <div class="line-numbers-container">
+                    <div class="line-numbers" id="line-numbers-js"></div>
+                    <textarea id="js-code" onkeyup="run(); updateLineNumbersCss();" spellcheck="false"></textarea>
+                </div>
+
+            </div>
+
+            <div class="right-bar">
+                <label class="name-language">
+                    <i class="fa-solid fa-play"></i>
+                    output
+                </label>
+                <iframe id="output"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <script src="../js/editor.js"></script>
+</body>
+
+</html>

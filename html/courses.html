@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Code Academy</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/courses.css">
+
+    <meta name="theme-color" content="#2091F9">
+
+    <meta name="title" content="Web Code Academy">
+    <meta name="description"
+        content="Hola, soy una descripción que verás cuando busques algo de mi temática en Google.">
+
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://AngelIsaiSzr.github.io">
+    <meta property="og:title" content="Web Code Academy">
+    <meta property="og:description"
+        content="Hola, soy una descripción que verás cuando busques algo de mi temática en Google.">
+    <meta property="og:image" content="https://AngelIsaiSzr.github.io/images/css.jpg">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.angel_szr1.com/">
+    <meta property="twitter:title" content="Web Code Academy">
+    <meta property="twitter:description"
+        content="Hola, soy una descripción que verás cuando busques algo de mi temática en Google.">
+    <meta property="twitter:image" content="https://AngelIsaiSzr.github.io/images/css.jpg">
+</head>
+
+<body>
+
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <h2 class="nav__title">Web Code Academy</h2>
+            </div>
+
+            <ul class="nav__link nav__link--menu nav__link--hover">
+                <li class="nav__items">
+                    <a href="../index.html" class="nav__links"><span>Inicio</span></a>
+                </li>
+                <li class="nav__items">
+                    <a href="../html/courses.html" class="nav__links"><span>Cursos</span></a>
+                </li>
+                <li class="nav__items">
+                    <a href="../html/editor.html" class="nav__links"><span>Editor</span></a>
+                </li>
+                <li class="nav__items">
+                    <a href="../html/about.html" class="nav__links"><span>Acerca de</span></a>
+                </li>
+                <li class="nav__items">
+                    <a href="../html/contact.html" class="nav__links"><span>Contacto</span></a>
+                </li>
+
+                <img src="../images/close.svg" class="nav__close">
+            </ul>
+
+            <div class="nav__menu">
+                <img src="../images/menu.svg" class="nav__img">
+            </div>
+        </nav>
+
+        <section class="hero__container container">
+            <h1 class="hero__title">Conoce los cursos de Web Code Academy</h1>
+            <p class="hero__paragraph">Ya sea que seas nuevo en la programación o busques mejorar tus habilidades, lleva
+                tu carrera al siguiente nivel con uno de nuestros cursos!</p>
+        </section>
+    </header>
+
+    <main>
+        <section id="course" class="course container">
+            <h2 class="subtitle animate-on-scroll">Nuestros Cursos</h2>
+
+            <div class="course__table">
+                <div class="course__element animate-on-scroll" onclick="highlightCard(this)">
+                    <p class="course__name"><b>Python</b></p>
+                    <div class="course__icon__pack">
+                        <img src="../images/python-logo.svg" class="course__icon" onclick="flipCard(this)">
+                    </div>
+                    <div class="course__items">
+                        <p class="course__features">Aprende a programar en Python, uno de los lenguajes de alto nivel
+                            más
+                            utilizado y más popular en la actualidad.</p>
+                        <iframe class="course__video" controls autoplay style="display:none"
+                            src="https://www.youtube.com/embed/nh40ZUw8f1o" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <a href="../html/course-python.html" class="course__cta">Explorar curso</a>
+                </div>
+
+                <div class="course__element animate-on-scroll course__element--best course__element--active"
+                    onclick="highlightCard(this)">
+                    <p class="course__name"><b>HTML5, CSS3 y JavaScript</b></p>
+                    <div class="course__icon__pack">
+                        <img src="../images/html-logo.svg" class="course__icon" onclick="flipCard(this)">
+                        <img src="../images/css-logo.svg" class="course__icon" onclick="flipCard(this)">
+                        <img src="../images/javascript-logo.svg" class="course__icon" onclick="flipCard(this)">
+                    </div>
+
+                    <div class="course__items">
+                        <p class="course__features">Aprende a diseñar sitios web con HTML, CSS y JavaScript.
+                            Aprenderás desde lo más básico hasta las técnicas avanzadas.</p>
+                        <iframe class="course__video" controls autoplay style="display:none"
+                            src="https://www.youtube.com/embed/rnmbxqS1nRo" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+
+                    <a href="../html/course-html-css-js.html" class="course__cta">Explorar curso</a>
+                </div>
+
+                <div class="course__element animate-on-scroll" onclick="highlightCard(this)">
+                    <p class="course__name"><b>Java</b></p>
+                    <div class="course__icon__pack">
+                        <img src="../images/java-logo.svg" class="course__icon" onclick="flipCard(this)">
+                    </div>
+
+                    <div class="course__items">
+                        <p class="course__features">Domina la programación orientada a objetos con Java, uno de los
+                            lenguajes más utilizados hoy en dia.</p>
+                        <iframe class="course__video" controls autoplay style="display:none"
+                            src="https://www.youtube.com/embed/q_-mO8QJ4Ic" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+
+                    <a href="../html/course-java.html" class="course__cta">Explorar curso</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimony">
+            <div class="testimony__container container">
+                <img src="../images/leftarrow.svg" class="testimony__arrow" id="before">
+
+                <section class="testimony__body testimony__body--show" data-id="1">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Mi nombre es María R. <span class="testimony__course">estudiante
+                                de Web Code Academy</span></h2>
+                        <p class="testimony__review">"Los cursos de Web Code Academy me han ayudado a mejorar mis
+                            habilidades de programación y a aprender mucho
+                            mas rapido."</p>
+                    </div>
+
+                    <figure class="testimony__picture">
+                        <img src="../images/testimony-1.jpg" class="testimony__img">
+                    </figure>
+                </section>
+
+                <section class="testimony__body" data-id="2">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Mi nombre es José M. <span class="testimony__course">estudiante de Web Code
+                                Academy</span></h2>
+                        <p class="testimony__review">"El profesor es muy claro en sus explicaciones y siempre esta
+                            dispuesto a responder preguntas.
+                            ¡Muy recomendado!"</p>
+                    </div>
+
+                    <figure class="testimony__picture">
+                        <img src="../images/testimony-2.jpg" class="testimony__img">
+                    </figure>
+                </section>
+
+                <section class="testimony__body" data-id="3">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Mi nombre es Ana S. <span class="testimony__course">estudiante de Web Code
+                                Academy</span></h2>
+                        <p class="testimony__review">"Desde que me uní al curso de Desarrollo Web en Web Code Academy,
+                            he
+                            aprendido muchas cosas impresionantes para avanzar en mi carrera de programación."
+                        </p>
+                    </div>
+
+                    <figure class="testimony__picture">
+                        <img src="../images/testimony-3.jpg" class="testimony__img">
+                    </figure>
+                </section>
+
+                <section class="testimony__body" data-id="4">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Mi nombre es Carlos G. <span class="testimony__course">estudiante de Web
+                                Code
+                                Academy</span></h2>
+                        <p class="testimony__review">"Me encanta la plataforma de Web Code Academy. Es fácil de usar y
+                            me ha permitido aprender a mi propio
+                            ritmo."</p>
+                    </div>
+
+                    <figure class="testimony__picture">
+                        <img src="../images/testimony-4.jpg" class="testimony__img">
+                    </figure>
+                </section>
+
+
+                <img src="../images/rightarrow.svg" class="testimony__arrow" id="next">
+            </div>
+        </section>
+
+        <section class="questions container">
+            <h2 class="subtitle">Preguntas frecuentes</h2>
+
+            <section class="questions__container">
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿Cuánto tiempo dura cada curso?
+                            <span class="questions__arrow">
+                                <img src="../images/arrow.svg" class="questions__img">
+                            </span>
+                        </h3>
+
+                        <p class="questions__show">La duración de cada curso varía, pero en promedio cada curso tiene
+                            una duración de 4 a 6 semanas. Sin embargo, algunos cursos pueden durar más o menos tiempo.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿Necesito tener experiencia previa en programación?
+                            <span class="questions__arrow">
+                                <img src="../images/arrow.svg" class="questions__img">
+                            </span>
+                        </h3>
+
+                        <p class="questions__show">No necesitas tener experiencia previa en programación para tomar
+                            nuestros cursos. Contamos con cursos completamente prácticos e interactivos, garantizando
+                            que incluso si eres nuevo en el área, pronto estarás creando tus propios proyectos aplicando
+                            los conceptos.</p>
+                    </div>
+                </article>
+
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿Puedo tomar los cursos a mi propio ritmo?
+                            <span class="questions__arrow">
+                                <img src="../images/arrow.svg" class="questions__img">
+                            </span>
+                        </h3>
+
+                        <p class="questions__show">Sí, nuestros cursos están diseñados para que puedas tomarlos a tu
+                            propio ritmo. Puedes completar las
+                            lecciones y tareas en el tiempo que te resulte más conveniente.</p>
+                    </div>
+                </article>
+
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿Cómo puedo saber si un curso es adecuado para mí?
+                            <span class="questions__arrow">
+                                <img src="../images/arrow.svg" class="questions__img">
+                            </span>
+                        </h3>
+
+                        <p class="questions__show">Cada curso tiene una descripción detallada que incluye los objetivos
+                            del curso, los temas que se tratarán y
+                            los requisitos previos. Si tienes preguntas adicionales, no dudes en contactarnos.</p>
+                    </div>
+                </article>
+            </section>
+    </main>
+
+    <footer class="footer">
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="#" class="footer__icons"><img src="../images/facebook.svg" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="../images/twitter.svg" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="../images/youtube.svg" class="footer__img"></a>
+            </div>
+
+            <h3 class="footer__copyright">Derechos reservados &copy; Web Code Academy</h3>
+        </section>
+    </footer>
+
+    <script src="../js/scripts.js"></script>
+</body>
+
+</html>
