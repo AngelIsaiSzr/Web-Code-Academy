@@ -387,9 +387,6 @@ body {
     .nav {
         --padding-container: 0;
     }
-    .nav {
-        --padding-container: 0;
-    }
 
     .nav__menu {
         display: block;
