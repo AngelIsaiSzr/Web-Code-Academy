@@ -1,3 +1,7 @@
+import { injectSpeedInsights } from '@vercel/speed-insights';
+
+injectSpeedInsights();
+
 const elements = document.querySelectorAll('.animate-on-scroll');
 
 function animateOnScroll() {
