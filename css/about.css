@@ -299,6 +299,9 @@ body {
 /* Media queries */
 
 @media (max-width:800px) {
+    .nav {
+        --padding-container: 0;
+    }
     .nav__menu {
         display: block;
     }

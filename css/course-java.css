@@ -512,6 +512,9 @@ body {
 /* Media queries */
 
 @media (max-width:800px) {
+    .nav {
+        --padding-container: 0;
+    }
     :root {
         --height-shape: 14em;
     }
