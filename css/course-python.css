@@ -22,6 +22,32 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.container--loader {
+    background-color: #333;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    transition: all 1.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid white;
+    border-top-color: transparent;
+    animation: loader 1.2s linear infinite;
+}
+
+@keyframes loader {
+    to {
+        transform: rotate(360deg);
+    }
+}
 
 .container {
     width: 90%;
