@@ -11,13 +11,13 @@ let leftBar = document.querySelector(".left-bar");
 let rightBar = document.querySelector(".right-bar");
 
 let images = [
-  "url('https://raw.githubusercontent.com/AngelIsaiSzr/Resources/main/images/background-index.jpg')",
-  "url('https://raw.githubusercontent.com/AngelIsaiSzr/Resources/main/images/background-courses.jpg')",
-  "url('https://raw.githubusercontent.com/AngelIsaiSzr/Resources/main/images/background-course-html-css-js.jpg')",
-  "url('https://raw.githubusercontent.com/AngelIsaiSzr/Resources/main/images/background-course-python.jpg')",
-  "url('https://raw.githubusercontent.com/AngelIsaiSzr/Resources/main/images/background-editor.jpg')",
-  "url('https://raw.githubusercontent.com/AngelIsaiSzr/Resources/main/images/background-about.jpg')",
-  "url('https://raw.githubusercontent.com/AngelIsaiSzr/Resources/main/images/background-contact.jpg')"
+  "url('images/background-index.jpg')",
+  "url('images/background-courses.jpg')",
+  "url('images/background-course-html-css-js.jpg')",
+  "url('images/background-course-python.jpg')",
+  "url('images/background-editor.jpg')",
+  "url('images/background-about.jpg')",
+  "url('images/background-contact.jpg')"
 ];
 
 function preloadImages() {

@@ -122,7 +122,7 @@ body {
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: max-content;
-    gap: 1em;
+    gap: 2em;
 }
 
 .nav__items {
@@ -337,12 +337,17 @@ body {
     .nav {
         --padding-container: 0;
     }
+
     .hero {
         margin-bottom: -100px;
     }
 
     .nav__menu {
         display: block;
+    }
+
+    .nav__link {
+        gap: 1em;
     }
 
     .nav__link--menu {

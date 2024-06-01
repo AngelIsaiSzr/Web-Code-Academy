@@ -122,7 +122,7 @@ body {
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: max-content;
-    gap: 1em;
+    gap: 2em;
     z-index: 999;
 }
 
@@ -418,6 +418,10 @@ body {
 
     .nav__menu {
         display: block;
+    }
+
+    .nav__link {
+        gap: 1em;
     }
 
     .nav__link--menu {
