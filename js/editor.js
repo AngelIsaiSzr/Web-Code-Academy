@@ -2,7 +2,6 @@ window.onload = function() {
   updateLineNumbersHtml();
   updateLineNumbersCss();
   updateLineNumbersJs();
-  preloadImages();
 };
 
 let imgBtn = document.querySelector("[data-id='img-btn']");
@@ -27,6 +26,8 @@ function preloadImages() {
     img.src = image.slice(4, -1);
   });
 }
+
+window.addEventListener('load', preloadImages);
 
 let currentImage = 0;
 
