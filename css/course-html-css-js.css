@@ -650,6 +650,10 @@ body {
         grid-column: 1/6;
     }
 
+    .syllabus__show {
+        text-align: right;
+    }
+
     .syllabus__copy {
         width: 100%;
     }
@@ -732,6 +736,10 @@ body {
 
     .syllabus {
         margin-top: 20px;
+    }
+
+    .syllabus__show {
+        text-align: left;
     }
 
     .subtitle {
