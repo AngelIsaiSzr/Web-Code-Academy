@@ -5,6 +5,12 @@
     --color-title: #333;
 }
 
+* {
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
 }
