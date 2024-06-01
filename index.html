@@ -5,7 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Web Code Academy</title>
+
+    <!-- Librerías -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Hojas de estilo -->
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/index.css">
@@ -64,7 +70,7 @@
             </div>
         </nav>
 
-        <section class="hero__container container">
+        <section class="hero__container container" data-aos="zoom-in" data-aos-delay="200">
             <h1 class="hero__title">Aprende a programar con Web Code Academy</h1>
             <p class="hero__paragraph">Encuentra los mejores cursos en línea para aprender a programar desde cero o
                 mejorar tus habilidades.</p>
@@ -74,41 +80,41 @@
 
     <main>
         <section class="container about">
-            <h2 class="subtitle animate-on-scroll">Lenguajes de programación</h2>
-            <p class="about__paragraph animate-on-scroll">Al dominar estos lenguajes de programación, tendrás la
+            <h2 class="subtitle" data-aos="fade-up">Lenguajes de programación</h2>
+            <p class="about__paragraph" data-aos="fade-right" data-aos-duration="900" data-aos-easing="ease-in-out">Al dominar estos lenguajes de programación, tendrás la
                 capacidad de crear
                 aplicaciones y páginas web atractivas y funcionales, y podrás explorar una amplia gama de oportunidades
                 en el campo de la programación y el desarrollo de software.</p>
 
             <div class="about__main">
-                <article class="about__icons">
-                    <div class="about__icon__pack animate-on-scroll">
+                <article class="about__icons" data-aos="fade-up" data-aos-duration="700">
+                    <div class="about__icon__pack">
                         <img src="images/python-logo.svg" class="about__icon">
                     </div>
-                    <h3 class="about__title animate-on-scroll">Python</h3>
-                    <p class="about__paragrah animate-on-scroll">Python es un lenguaje de alto nivel, con una sintaxis
+                    <h3 class="about__title">Python</h3>
+                    <p class="about__paragrah">Python es un lenguaje de alto nivel, con una sintaxis
                         clara y sencilla, utilizado en diversas aplicaciones, desde automatización de tareas hasta
                         desarrollo web.</p>
                 </article>
 
-                <article class="about__icons">
-                    <div class="about__icon__pack animate-on-scroll">
+                <article class="about__icons" data-aos="fade-up" data-aos-duration="900">
+                    <div class="about__icon__pack">
                         <img src="images/html-logo.svg" class="about__icon">
                         <img src="images/css-logo.svg" class="about__icon">
                         <img src="images/javascript-logo.svg" class="about__icon">
                     </div>
-                    <h3 class="about__title animate-on-scroll">HTML5, CSS3 y JavaScript</h3>
-                    <p class="about__paragrah animate-on-scroll">HTML, CSS y JavaScript son los lenguajes fundamentales
+                    <h3 class="about__title">HTML5, CSS3 y JavaScript</h3>
+                    <p class="about__paragrah">HTML, CSS y JavaScript son los lenguajes fundamentales
                         para el desarrollo web. HTML se encarga de la estructura, CSS del diseño y JavaScript de la
                         interactividad.</p>
                 </article>
 
-                <article class="about__icons">
-                    <div class="about__icon__pack animate-on-scroll">
+                <article class="about__icons" data-aos="fade-up" data-aos-duration="1100">
+                    <div class="about__icon__pack">
                         <img src="images/java-logo.svg" class="about__icon">
                     </div>
-                    <h3 class="about__title animate-on-scroll">Java</h3>
-                    <p class="about__paragrah animate-on-scroll">Java es un lenguaje de programación orientado a objetos
+                    <h3 class="about__title">Java</h3>
+                    <p class="about__paragrah">Java es un lenguaje de programación orientado a objetos
                         que se utiliza en el desarrollo de aplicaciones de escritorio, web y móviles. Es conocido por su
                         portabilidad.</p>
                 </article>
@@ -117,7 +123,7 @@
 
         <section class="knowledge">
             <div class="knowledge__container container">
-                <div class="knowledege__texts">
+                <div class="knowledege__texts" data-aos="fade-down" data-aos-duration="500" data-aos-easing="linear">
                     <h2 class="subtitle">Cursos completos y actualizados. ¡Aprende a programar de una vez por todas!
                     </h2>
                     <p class="knowledge__paragraph">Nuestros cursos están diseñados para enseñarte desde las bases hasta
@@ -127,18 +133,20 @@
                         para desarrollar tus propias aplicaciones!</p>
                 </div>
 
-                <figure class="knowledge__picture">
+                <figure class="knowledge__picture" data-aos="fade-up" data-aos-duration="500">
                     <img src="images/computer.png" class="knowledge__img" id="knowledge-img">
                 </figure>
             </div>
         </section>
 
         <section class="questions container">
-            <h2 class="subtitle">Preguntas frecuentes</h2>
-            <p class="questions__paragraph">Aquí encontrarás las respuestas a las preguntas más frecuentes que suelen
-                tener las personas interesadas en programación.</p>
+            <div data-aos="fade-down">
+                <h2 class="subtitle">Preguntas frecuentes</h2>
+                <p class="questions__paragraph">Aquí encontrarás las respuestas a las preguntas más frecuentes que suelen
+                    tener las personas interesadas en programación.</p>
+            </div>
             <section class="questions__container">
-                <article class="questions__padding">
+                <article class="questions__padding" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
                     <div class="questions__answer">
                         <h3 class="questions__title">¿Qué es programar?
                             <span class="questions__arrow">
@@ -153,7 +161,7 @@
                     </div>
                 </article>
 
-                <article class="questions__padding">
+                <article class="questions__padding" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
                     <div class="questions__answer">
                         <h3 class="questions__title">¿Qué es un lenguaje de programación?
                             <span class="questions__arrow">
@@ -168,7 +176,7 @@
                     </div>
                 </article>
 
-                <article class="questions__padding">
+                <article class="questions__padding" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
                     <div class="questions__answer">
                         <h3 class="questions__title">¿Qué aprenderé con estos cursos?
                             <span class="questions__arrow">
@@ -185,7 +193,7 @@
                 </article>
             </section>
 
-            <section class="questions__offer">
+            <section class="questions__offer" data-aos="flip-up">
                 <h2 class="subtitle">¿Estas listo para aprender a programar?</h2>
                 <p class="questions__copy">¿Quieres convertirte en un maestro de la programación y crear soluciones
                     innovadoras para el mundo digital? ¡Este es el lugar perfecto para comenzar! Aprende a desarrollar
@@ -208,11 +216,22 @@
         </section>
     </footer>
 
+    <!-- Archivo Js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Librería de animaciones -->
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Mi script -->
     <script src="js/scripts.js"></script>
+
     <script>
         window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
     </script>
     <script defer src="/_vercel/insights/script.js"></script>
+
     <script>
         window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
     </script>

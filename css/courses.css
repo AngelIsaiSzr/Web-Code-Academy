@@ -225,7 +225,6 @@ body {
 }
 
 .course__element--active {
-    transform: scale(1.1);
     width: 370px;
     padding: 60px 40px;
     background-color: #333;
@@ -235,46 +234,6 @@ body {
     --color-cta: #FFF;
     --color-items: #FFF;
     position: relative;
-}
-
-.course__element.flip {
-    animation: flip-animation 3s forwards;
-}
-
-.course__element.flip-back {
-    animation: flip-back-animation 3s forwards;
-}
-
-@keyframes flip-animation {
-    from {
-        transform: rotateY(0deg);
-    }
-
-    to {
-        transform: rotateY(360deg);
-    }
-}
-
-@keyframes flip-back-animation {
-    from {
-        transform: rotate(360deg);
-    }
-
-    to {
-        transform: rotate(0deg);
-    }
-}
-
-.course__video {
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    width: 80%;
-    height: 50%;
-    border-radius: 15px;
-    transform: translate(-50%, -50%);
-    object-fit: cover;
-    display: none;
 }
 
 .course__name {
@@ -291,11 +250,6 @@ body {
 
 .course__icon {
     width: 40px;
-}
-
-.course__course {
-    font-size: 2.5rem;
-    color: var(--color-course);
 }
 
 .course__items {
@@ -327,7 +281,7 @@ body {
 .animate-on-scroll {
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
+    transition: opacity 1.5s ease-out, transform 4s ease-out;
 }
 
 .animate-on-scroll.animate {
@@ -493,12 +447,12 @@ body {
 
 .footer__img {
     width: 30px;
-    transform: scale(1) rotate(0deg);
+    transform: scale(1);
     transition: transform 0.5s ease;
 }
 
 .footer__img:hover {
-    transform: scale(1.3) rotate(360deg);
+    transform: scale(1.3);
 }
 
 /* Media queries */
@@ -609,10 +563,6 @@ body {
     }
 
     .course__element {
-        width: 90%;
-    }
-
-    .course__element--best {
         width: 90%;
     }
 

@@ -5,7 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Web Code Academy</title>
+
+    <!-- Librerías -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Hojas de estilo -->
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/courses.css">
@@ -68,7 +74,7 @@
             </div>
         </nav>
 
-        <section class="hero__container container">
+        <section class="hero__container container" data-aos="zoom-in" data-aos-delay="200">
             <h1 class="hero__title">Conoce los cursos de Web Code Academy</h1>
             <p class="hero__paragraph">Ya sea que seas nuevo en la programación o busques mejorar tus habilidades, lleva
                 tu carrera al siguiente nivel con uno de nuestros cursos!</p>
@@ -77,60 +83,48 @@
 
     <main>
         <section id="course" class="course container">
-            <h2 class="subtitle animate-on-scroll">Nuestros Cursos</h2>
+            <h2 class="subtitle" data-aos="fade-up">Nuestros Cursos</h2>
 
             <div class="course__table">
-                <div class="course__element animate-on-scroll" onclick="highlightCard(this)">
+                <div class="course__element" data-aos="flip-right" data-aos-duration="1500" onclick="highlightCard(this)">
                     <p class="course__name"><b>Python FullStack</b></p>
                     <div class="course__icon__pack">
-                        <img src="images/python-logo.svg" class="course__icon" onclick="flipCard(this)">
+                        <img src="images/python-logo.svg" class="course__icon">
                     </div>
                     <div class="course__items">
                         <p class="course__features">Aprende a programar en Python, uno de los lenguajes de alto nivel
                             más
                             utilizado y más popular en la actualidad.</p>
-                        <iframe class="course__video" controls autoplay style="display:none"
-                            src="https://www.youtube.com/embed/nh40ZUw8f1o" title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
                     </div>
                     <a href="courses/course-python.html" class="course__cta">Explorar curso</a>
                 </div>
 
-                <div class="course__element animate-on-scroll course__element--best course__element--active"
+                <div class="course__element course__element--active" data-aos="flip-right" data-aos-duration="1500"
                     onclick="highlightCard(this)">
                     <p class="course__name"><b>Desarrollo Web FullStack</b></p>
                     <div class="course__icon__pack">
-                        <img src="images/html-logo.svg" class="course__icon" onclick="flipCard(this)">
-                        <img src="images/css-logo.svg" class="course__icon" onclick="flipCard(this)">
-                        <img src="images/javascript-logo.svg" class="course__icon" onclick="flipCard(this)">
+                        <img src="images/html-logo.svg" class="course__icon">
+                        <img src="images/css-logo.svg" class="course__icon">
+                        <img src="images/javascript-logo.svg" class="course__icon">
                     </div>
 
                     <div class="course__items">
                         <p class="course__features">Aprende a crear sitios web con HTML, CSS y JavaScript.
                             Aprenderás desde lo más básico hasta las técnicas avanzadas.</p>
-                        <iframe class="course__video" controls autoplay style="display:none"
-                            src="https://www.youtube.com/embed/rnmbxqS1nRo" title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
                     </div>
 
                     <a href="courses/course-html-css-js.html" class="course__cta">Explorar curso</a>
                 </div>
 
-                <div class="course__element animate-on-scroll" onclick="highlightCard(this)">
+                <div class="course__element" data-aos="flip-right" data-aos-duration="1500" onclick="highlightCard(this)">
                     <p class="course__name"><b>Java FullStack</b></p>
                     <div class="course__icon__pack">
-                        <img src="images/java-logo.svg" class="course__icon" onclick="flipCard(this)">
+                        <img src="images/java-logo.svg" class="course__icon">
                     </div>
 
                     <div class="course__items">
                         <p class="course__features">Domina la programación orientada a objetos con Java, uno de los
                             lenguajes más utilizados hoy en dia.</p>
-                        <iframe class="course__video" controls autoplay style="display:none"
-                            src="https://www.youtube.com/embed/q_-mO8QJ4Ic" title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
                     </div>
 
                     <a href="courses/course-java.html" class="course__cta">Explorar curso</a>
@@ -139,7 +133,7 @@
         </section>
 
         <section class="testimony">
-            <div class="testimony__container container">
+            <div class="testimony__container container" data-aos="zoom-in-up">
                 <img src="images/leftarrow.svg" class="testimony__arrow" id="before">
 
                 <section class="testimony__body testimony__body--show" data-id="1">
@@ -206,10 +200,10 @@
         </section>
 
         <section class="questions container">
-            <h2 class="subtitle">Preguntas frecuentes</h2>
+            <h2 class="subtitle" data-aos="fade-down">Preguntas frecuentes</h2>
 
             <section class="questions__container">
-                <article class="questions__padding">
+                <article class="questions__padding" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
                     <div class="questions__answer">
                         <h3 class="questions__title">¿Cuánto tiempo dura cada curso?
                             <span class="questions__arrow">
@@ -223,7 +217,7 @@
                     </div>
                 </article>
 
-                <article class="questions__padding">
+                <article class="questions__padding" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
                     <div class="questions__answer">
                         <h3 class="questions__title">¿Necesito tener experiencia previa en programación?
                             <span class="questions__arrow">
@@ -238,7 +232,7 @@
                     </div>
                 </article>
 
-                <article class="questions__padding">
+                <article class="questions__padding" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
                     <div class="questions__answer">
                         <h3 class="questions__title">¿Puedo tomar los cursos a mi propio ritmo?
                             <span class="questions__arrow">
@@ -252,7 +246,7 @@
                     </div>
                 </article>
 
-                <article class="questions__padding">
+                <article class="questions__padding" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
                     <div class="questions__answer">
                         <h3 class="questions__title">¿Cómo puedo saber si un curso es adecuado para mí?
                             <span class="questions__arrow">
@@ -280,6 +274,15 @@
         </section>
     </footer>
 
+    <!-- Archivo Js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Librería de animaciones -->
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Mi script -->
     <script src="js/scripts.js"></script>
 </body>
 

@@ -5,7 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                
     <title>Web Code Academy</title>
+
+    <!-- Librerías -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Hojas de estilo -->
     <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/course-java.css">
@@ -69,7 +75,7 @@
         </nav>
 
         <section class="hero__container container">
-            <h1 class="hero__title">Bienvenido al curso de Java FullStack</h1>
+            <h1 class="hero__title" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="800" data-aos-easing="ease-in-out">Bienvenido al curso de Java FullStack</h1>
             <p class="hero__phrase"></p>
             <p class="hero__author"></p>
         </section>
@@ -79,15 +85,15 @@
         <section class="about container">
 
             <div class="about__course">
-                <h2 class="title">¿De qué trata el curso?</h2>
-                <p class="about__paragraph">Este curso te enseñará a programar en Java desde cero. Aprenderás los
+                <h2 class="title" data-aos="fade-up" data-aos-duration="300" data-aos-easing="ease-in-out">¿De qué trata el curso?</h2>
+                <p class="about__paragraph" data-aos="fade-right" data-aos-duration="900" data-aos-easing="ease-in-out">Este curso te enseñará a programar en Java desde cero. Aprenderás los
                     fundamentos del lenguaje, incluyendo su sintaxis básica y estructuras de control. También aprenderás
                     sobre Programación Orientada a Objetos (POO) y cómo aplicarla para resolver problemas de
                     programación. Además, aprenderás a desarrollar aplicaciones móviles Android y aplicaciones web
                     utilizando Java.</p>
             </div>
 
-            <figure class="about__picture">
+            <figure class="about__picture" data-aos="flip-left" data-aos-duration="600" data-aos-easing="ease-in-out">
                 <img src="../images/java.png" class="about__img">
             </figure>
 
@@ -96,12 +102,14 @@
         <section class="card">
             <div class="container">
 
-                <h2 class="title card__main">Aprende todo sobre Java</h2>
-                <p class="card__copy">Estos son los temas más importantes que aprenderás en el curso</p>
+                <div data-aos="fade-down">
+                    <h2 class="title card__main">Aprende todo sobre Java</h2>
+                    <p class="card__copy">Estos son los temas más importantes que aprenderás en el curso</p>
+                </div>
 
                 <div class="card__container">
 
-                    <div class="card__item">
+                    <div class="card__item" data-aos="flip-right">
                         <figure class="card__img">
                             <img src="../images/POO2.png" class="card__picture">
                         </figure>
@@ -112,7 +120,7 @@
                             resolver problemas de programación.</p>
                     </div>
 
-                    <div class="card__item">
+                    <div class="card__item" data-aos="flip-right">
                         <figure class="card__img">
                             <img src="../images/java-android.png" class="card__picture">
                         </figure>
@@ -123,7 +131,7 @@
                             integración con servicios web y bases de datos.</p>
                     </div>
 
-                    <div class="card__item">
+                    <div class="card__item" data-aos="flip-right">
                         <figure class="card__img">
                             <img src="../images/java-web.png" class="card__picture__special">
                         </figure>
@@ -134,7 +142,7 @@
                             Java. También aprenderás sobre la arquitectura de las aplicaciones web.</p>
                     </div>
 
-                    <div class="card__item">
+                    <div class="card__item" data-aos="flip-right">
                         <figure class="card__img">
                             <img src="../images/java-logo.svg" class="card__picture">
                         </figure>
@@ -151,14 +159,14 @@
 
         <section class="course container">
 
-            <figure class="course__picture">
+            <figure class="course__picture" data-aos="fade-up" data-aos-duration="900" data-aos-easing="ease-in-out">
                 <video
                     src="https://videos.pexels.com/video-files/852421/852421-hd_1280_720_30fps.mp4"
                     loop autoplay muted controlsList="nodownload" class="course__img" id="course__img">
                 </video>
             </figure>
 
-            <div class="course__about">
+            <div class="course__about" data-aos="fade-down" data-aos-duration="900" data-aos-easing="ease-in-out">
                 <h2 class="title">¿Cuáles son los requisitos para acceder al curso?</h2>
                 <p class="course__paragraph">Este curso de Java está diseñado para ser accesible para cualquier persona
                     interesada en aprender a programar en este lenguaje de programación. No se requiere ningún
@@ -173,9 +181,9 @@
 
         <section class="syllabus">
             <section class="syllabus__container">
-                <h2 class="subtitle">Temario del curso</h2>
+                <h2 class="subtitle" data-aos="fade-down">Temario del curso</h2>
 
-                <article class="syllabus__padding">
+                <article class="syllabus__padding" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
                     <div class="syllabus__answer">
                         <h3 class="syllabus__title">Módulo 0: Fundamentos de la Programación
                             <span class="syllabus__arrow">
@@ -214,7 +222,7 @@
                     </div>
                 </article>
 
-                <article class="syllabus__padding">
+                <article class="syllabus__padding" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
                     <div class="syllabus__answer">
                         <h3 class="syllabus__title">Módulo 1: Fundamentos de Java
                             <span class="syllabus__arrow">
@@ -253,7 +261,7 @@
                     </div>
                 </article>
 
-                <article class="syllabus__padding">
+                <article class="syllabus__padding" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
                     <div class="syllabus__answer">
                         <h3 class="syllabus__title">Módulo 2: Programación Orientada a Objetos
                             <span class="syllabus__arrow">
@@ -290,7 +298,7 @@
                     </div>
                 </article>
 
-                <article class="syllabus__padding">
+                <article class="syllabus__padding" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
                     <div class="syllabus__answer">
                         <h3 class="syllabus__title">Módulo 3: Desarrollo de aplicaciones de consola con Java
                             <span class="syllabus__arrow">
@@ -323,7 +331,7 @@
                     </div>
                 </article>
 
-                <article class="syllabus__padding">
+                <article class="syllabus__padding" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
                     <div class="syllabus__answer">
                         <h3 class="syllabus__title">Módulo 4: Desarrollo de aplicaciones Web con Java
                             <span class="syllabus__arrow">
@@ -361,7 +369,7 @@
                     </div>
                 </article>
 
-                <article class="syllabus__padding">
+                <article class="syllabus__padding" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
                     <div class="syllabus__answer">
                         <h3 class="syllabus__title">Módulo 5: Desarrollo de aplicaciones Android con Java
                             <span class="syllabus__arrow">
@@ -398,7 +406,7 @@
                     </div>
                 </article>
 
-                <article class="syllabus__padding">
+                <article class="syllabus__padding" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
                     <div class="syllabus__answer">
                         <h3 class="syllabus__title">Módulo 6: Programación avanzada en Java
                             <span class="syllabus__arrow">
@@ -431,7 +439,7 @@
                     </div>
                 </article>
 
-                <article class="syllabus__padding">
+                <article class="syllabus__padding" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
                     <div class="syllabus__answer">
                         <h3 class="syllabus__title">Módulo 7: Desarrollo de aplicaciones empresariales con Java
                             <span class="syllabus__arrow">
@@ -464,7 +472,7 @@
                     </div>
                 </article>
 
-                <article class="syllabus__padding">
+                <article class="syllabus__padding" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
                     <div class="syllabus__answer">
                         <h3 class="syllabus__title">Módulo 8: Proyecto Final - Desarrollo de una aplicación Java
                             <span class="syllabus__arrow">
@@ -552,6 +560,15 @@
         </section>
     </footer>
 
+    <!-- Archivo Js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Librería de animaciones -->
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Mi script -->
     <script src="../js/scripts.js"></script>
     <script src="../js/course-java.js"></script>
 </body>

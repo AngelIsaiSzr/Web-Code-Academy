@@ -5,7 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            
     <title>Web Code Academy</title>
+
+    <!-- Librerías -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Hojas de estilo -->
     <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/course-python.css">
@@ -69,7 +75,7 @@
         </nav>
 
         <section class="hero__container container">
-            <h1 class="hero__title">Bienvenido al curso de Python FullStack</h1>
+            <h1 class="hero__title" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="800" data-aos-easing="ease-in-out">Bienvenido al curso de Python FullStack</h1>
             <p class="hero__phrase"></p>
             <p class="hero__author"></p>
         </section>
@@ -79,16 +85,16 @@
         <section class="about container">
 
             <div class="about__course">
-                <h2 class="title">¿De qué trata el curso?</h2>
+                <h2 class="title" data-aos="fade-up" data-aos-duration="300" data-aos-easing="ease-in-out">¿De qué trata el curso?</h2>
 
-                <p class="about__paragraph">Este curso te enseñará a programar en Python desde cero. Comenzaremos
+                <p class="about__paragraph" data-aos="fade-right" data-aos-duration="900" data-aos-easing="ease-in-out">Este curso te enseñará a programar en Python desde cero. Comenzaremos
                     explicando los fundamentos del lenguaje para luego aprender técnicas avanzadas con herramientas como
                     módulos, POO y testing. Finalmente, aplicarás tus conocimientos creando proyectos prácticos como
                     juegos, scripts útiles y aplicaciones gráficas con herramientas como Pygame, Matplotlib y Tkinter.
                 </p>
             </div>
 
-            <figure class="about__picture">
+            <figure class="about__picture" data-aos="flip-left" data-aos-duration="600" data-aos-easing="ease-in-out">
                 <img src="../images/mockup.gif" class="about__img">
             </figure>
 
@@ -97,12 +103,14 @@
         <section class="card">
             <div class="container">
 
-                <h2 class="title card__main">Aprende todo sobre Python</h2>
-                <p class="card__copy">Estos son los temas más importantes que aprenderás en el curso</p>
+                <div data-aos="fade-down">
+                    <h2 class="title card__main">Aprende todo sobre Python</h2>
+                    <p class="card__copy">Estos son los temas más importantes que aprenderás en el curso</p>
+                </div>
 
                 <div class="card__container">
 
-                    <div class="card__item">
+                    <div class="card__item" data-aos="flip-right">
                         <figure class="card__img">
                             <img src="../images/videogame.png" class="card__picture__special">
                         </figure>
@@ -113,7 +121,7 @@
                             interactivas que utilicen herramientas como Tkinter, Pygame, Matplotlib, API's y más.</p>
                     </div>
 
-                    <div class="card__item">
+                    <div class="card__item" data-aos="flip-right">
                         <figure class="card__img">
                             <img src="../images/POO.png" class="card__picture">
                         </figure>
@@ -124,7 +132,7 @@
                             mantenible y escalable.</p>
                     </div>
 
-                    <div class="card__item">
+                    <div class="card__item" data-aos="flip-right">
                         <figure class="card__img">
                             <img src="../images/python.png" class="card__picture__special">
                         </figure>
@@ -135,7 +143,7 @@
                             funciones.</p>
                     </div>
 
-                    <div class="card__item">
+                    <div class="card__item" data-aos="flip-right">
                         <figure class="card__img">
                             <img src="../images/python-logo.svg" class="card__picture">
                         </figure>
@@ -152,14 +160,14 @@
 
         <section class="course container">
 
-            <figure class="course__picture">
+            <figure class="course__picture" data-aos="fade-up" data-aos-duration="900" data-aos-easing="ease-in-out">
                 <video
                     src="https://videos.pexels.com/video-files/5495781/5495781-hd_1366_576_30fps.mp4"
                     loop autoplay muted controlsList="nodownload" class="course__img" id="course__img">
                 </video>
             </figure>
 
-            <div class="course__about">
+            <div class="course__about" data-aos="fade-down" data-aos-duration="900" data-aos-easing="ease-in-out">
                 <h2 class="title">¿Cuáles son los requisitos para acceder al curso?</h2>
                 <p class="course__paragraph">Este curso está destinado para cualquier persona interesada en aprender a
                     programar. No se necesita ningún conocimiento previo para acceder al curso, sólo es indispensable
@@ -172,9 +180,9 @@
 
         <section class="syllabus">
             <section class="syllabus__container">
-                <h2 class="subtitle">Temario del curso</h2>
+                <h2 class="subtitle" data-aos="fade-down">Temario del curso</h2>
 
-                <article class="syllabus__padding">
+                <article class="syllabus__padding" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
                     <div class="syllabus__answer">
                         <h3 class="syllabus__title">Módulo 0: Conceptos previos
                             <span class="syllabus__arrow">
@@ -213,7 +221,7 @@
                     </div>
                 </article>
 
-                <article class="syllabus__padding">
+                <article class="syllabus__padding" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
                     <div class="syllabus__answer">
                         <h3 class="syllabus__title">Módulo 1: Introducción a Python
                             <span class="syllabus__arrow">
@@ -260,7 +268,7 @@
                     </div>
                 </article>
 
-                <article class="syllabus__padding">
+                <article class="syllabus__padding" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
                     <div class="syllabus__answer">
                         <h3 class="syllabus__title">Módulo 2: Estructuras de datos
                             <span class="syllabus__arrow">
@@ -297,7 +305,7 @@
                     </div>
                 </article>
 
-                <article class="syllabus__padding">
+                <article class="syllabus__padding" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
                     <div class="syllabus__answer">
                         <h3 class="syllabus__title">Módulo 3: Funciones avanzadas
                             <span class="syllabus__arrow">
@@ -334,7 +342,7 @@
                     </div>
                 </article>
 
-                <article class="syllabus__padding">
+                <article class="syllabus__padding" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
                     <div class="syllabus__answer">
                         <h3 class="syllabus__title">Módulo 4: Programación orientada a objetos
                             <span class="syllabus__arrow">
@@ -371,7 +379,7 @@
                     </div>
                 </article>
 
-                <article class="syllabus__padding">
+                <article class="syllabus__padding" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
                     <div class="syllabus__answer">
                         <h3 class="syllabus__title">Módulo 5: Módulos y paquetes
                             <span class="syllabus__arrow">
@@ -407,7 +415,7 @@
                     </div>
                 </article>
 
-                <article class="syllabus__padding">
+                <article class="syllabus__padding" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
                     <div class="syllabus__answer">
                         <h3 class="syllabus__title">Módulo 6: Excepciones y depuración
                             <span class="syllabus__arrow">
@@ -442,7 +450,7 @@
                     </div>
                 </article>
 
-                <article class="syllabus__padding">
+                <article class="syllabus__padding" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
                     <div class="syllabus__answer">
                         <h3 class="syllabus__title">Módulo 7: Librerías de Python
                             <span class="syllabus__arrow">
@@ -478,7 +486,7 @@
                     </div>
                 </article>
 
-                <article class="syllabus__padding">
+                <article class="syllabus__padding" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
                     <div class="syllabus__answer">
                         <h3 class="syllabus__title">Módulo 8: Proyectos prácticos
                             <span class="syllabus__arrow">
@@ -512,7 +520,7 @@
                     </div>
                 </article>
 
-                <article class="syllabus__padding">
+                <article class="syllabus__padding" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
                     <div class="syllabus__answer">
                         <h3 class="syllabus__title">Módulo 9: Proyecto Final - Creando una aplicación avanzada en Python
                             <span class="syllabus__arrow">
@@ -566,6 +574,15 @@
         </section>
     </footer>
 
+    <!-- Archivo Js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Librería de animaciones -->
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Mi script -->
     <script src="../js/scripts.js"></script>
     <script src="../js/course-python.js"></script>
 </body>

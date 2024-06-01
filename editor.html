@@ -5,7 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Web Code Academy</title>
+
+    <!-- Librerías -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Hojas de estilo -->
     <script src="https://kit.fontawesome.com/cf04bd9cb6.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/editor.css">
@@ -31,7 +37,7 @@
         </nav>
 
         <div class="container-editor">
-            <div class="left-bar">
+            <div class="left-bar" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom" data-aos-duration="900">
 
                 <label class="name-language">
                     <i class="fa-brands fa-html5"></i>
@@ -62,7 +68,7 @@
 
             </div>
 
-            <div class="right-bar">
+            <div class="right-bar" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom" data-aos-duration="900">
                 <label class="name-language">
                     <i class="fa-solid fa-play"></i>
                     output
@@ -71,7 +77,16 @@
             </div>
         </div>
     </section>
+    
+    <!-- Archivo Js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <!-- Librería de animaciones -->
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Mi script -->
     <script src="js/editor.js"></script>
 </body>
 

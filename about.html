@@ -5,7 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Web Code Academy</title>
+
+    <!-- Librerías -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Hojas de estilo -->
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/about.css">
@@ -68,7 +74,7 @@
             </div>
         </nav>
 
-        <section class="hero__container container">
+        <section class="hero__container container" data-aos="zoom-in" data-aos-delay="200">
             <h1 class="hero__title">Conoce al Creador de Web Code Academy</h1>
             <p class="hero__paragraph">Un apasionado de la programación y que cree firmemente en el poder de la
                 educación en
@@ -79,36 +85,38 @@
     <main>
         <section class="container founder">
             <div class="founder__container">
-                <img src="images/Angel Szr.jpg" alt="Angel Szr" title="Angel Szr" class="founder__img animate-on-scroll">
-                <h2 class="founder__name animate-on-scroll">Angel Salazar</h2>
-                <p class="founder__tag animate-on-scroll">Creador de Web Code Academy & Full Stack Developer</p>
-                <p class="founder__paragraph animate-on-scroll">Holaa 🖐 Soy Angel, el creador y fundador de Web Code
-                    Academy. En Web Code Academy, mi objetivo es proporcionar una plataforma de aprendizaje en línea
-                    accesible y de alta calidad para estudiantes de todo el mundo. Creo que la programación es una
-                    habilidad esencial en el mundo moderno, y estoy comprometido a ayudar a otros a adquirir estas
-                    habilidades y hacer realidad sus sueños.
-                </p>
-                <br>
-                <p class="founder__paragraph animate-on-scroll">Bienvenid@ a Web Code Academy! ¿Estás listo para
-                    comenzar a aprender?</p>
+                <img src="images/Angel Szr.jpg" alt="Angel Szr" title="Angel Szr" class="founder__img" data-aos="fade-up" data-aos-duration="900" data-aos-easing="linear">
+                <h2 class="founder__name" data-aos="fade-up" data-aos-duration="900" data-aos-easing="ease-in-out">Angel Salazar</h2>
+                <p class="founder__tag" data-aos="fade-up" data-aos-duration="900" data-aos-easing="ease-in-out">Creador de Web Code Academy & Full Stack Developer</p>
+                <div  data-aos="fade-up" data-aos-duration="900" data-aos-easing="ease-in-out">
+                    <p class="founder__paragraph">Holaa 🖐 Soy Angel, el creador y fundador de Web Code
+                        Academy. En Web Code Academy, mi objetivo es proporcionar una plataforma de aprendizaje en línea
+                        accesible y de alta calidad para estudiantes de todo el mundo. Creo que la programación es una
+                        habilidad esencial en el mundo moderno, y estoy comprometido a ayudar a otros a adquirir estas
+                        habilidades y hacer realidad sus sueños.
+                    </p>
+                    <br>
+                    <p class="founder__paragraph">Bienvenid@ a Web Code Academy! ¿Estás listo para
+                        comenzar a aprender?</p>
+                </div>
             </div>
         </section>
 
         <section class="knowledge">
             <div class="knowledge__container container">
                 <div class="knowledege__texts">
-                    <h2 class="subtitle">¿Por qué invertir tiempo en Web Code Academy?</h2>
-                    <p class="knowledge__paragraph">Desde pequeño he estado interesado en la tecnología y la
+                    <h2 class="subtitle" data-aos="fade-right" data-aos-duration="500">¿Por qué invertir tiempo en Web Code Academy?</h2>
+                    <p class="knowledge__paragraph" data-aos="fade-right" data-aos-duration="500">Desde pequeño he estado interesado en la tecnología y la
                         programación, y he pasado mucho tiempo aprendiendo y perfeccionando mis habilidades. Ahora quiero
                         compartir mi pasión por la programación con otros estudiantes y ayudarles a alcanzar sus
                         objetivos.</p>
                     <br>
-                    <p class="knowledge__paragraph">Estudiar en Web Code Academy aumentará las posibilidades de un futuro
+                    <p class="knowledge__paragraph" data-aos="fade-right" data-aos-duration="500">Estudiar en Web Code Academy aumentará las posibilidades de un futuro
                         mejor para ti y tienes un instructor que realmente ha aprendido lo que necesitas para ser
                         exitoso en este campo.</p>
                 </div>
 
-                <a href="courses.html" class="cta">Empezar ahora!</a>
+                <a href="courses.html" class="cta" data-aos="fade-right" data-aos-duration="500">Empezar ahora!</a>
             </div>
         </section>
     </main>
@@ -125,6 +133,15 @@
         </section>
     </footer>
 
+    <!-- Archivo Js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Librería de animaciones -->
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Mi script -->
     <script src="js/scripts.js"></script>
 </body>
 

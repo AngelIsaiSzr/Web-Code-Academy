@@ -5,7 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
     <title>Web Code Academy</title>
+
+    <!-- Librerías -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Hojas de estilo -->
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/contact.css">
@@ -68,7 +74,7 @@
             </div>
         </nav>
 
-        <section class="hero__container container">
+        <section class="hero__container container" data-aos="zoom-in" data-aos-delay="200">
             <h1 class="hero__title">Contáctanos para más información</h1>
             <p class="hero__paragraph">¿Quieres saber más sobre nuestros cursos de programación? ¡Escríbenos y te
                 responderemos lo antes posible! Estamos ansiosos por ayudarte a alcanzar tus objetivos de aprendizaje.
@@ -79,31 +85,33 @@
     <main>
         <section class="container contact">
             <div class="contact__container">
-                <h2 class="contact__name animate-on-scroll">Envíanos un mensaje</h2>
-                <p class="contact__paragraph animate-on-scroll">Si tienes alguna pregunta, sugerencia o simplemente
+                <h2 class="contact__name" data-aos="fade-up" data-aos-duration="900" data-aos-easing="ease-in-out">Envíanos un mensaje</h2>
+                <p class="contact__paragraph" data-aos="fade-up" data-aos-duration="900" data-aos-easing="ease-in-out">Si tienes alguna pregunta, sugerencia o simplemente
                     quieres saludarnos, por favor completa el formulario a continuación y te responderemos lo antes
                     posible. ¡Estamos ansiosos por escucharte!</p>
                     <form class="contact__form animate-on-scroll" id="contact__form" action="https://formspree.io/f/xzbnlbww" method="POST">
 
-                        <label for="name">Nombre</label>
-                        <input type="text" id="name" name="name" required>
+                        <label data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom" data-aos-duration="900" for="name">Nombre</label>
+                        <input data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom" data-aos-duration="900" type="text" id="name" name="name" required>
                         <ul id="message-error-name">
                             <li id="error-name"></li>
                         </ul>
                     
-                        <label for="email">Correo electrónico</label>
-                        <input type="email" id="email" name="email" required>
+                        <label data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom" data-aos-duration="900" for="email">Correo electrónico</label>
+                        <input data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom" data-aos-duration="900" type="email" id="email" name="email" required>
                         <ul id="message-error-email">
                             <li id="error-email"></li>
                         </ul>
                     
-                        <label for="message">Mensaje</label>
-                        <textarea id="message" name="message" required></textarea>
+                        <label data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom" data-aos-duration="900" for="message">Mensaje</label>
+                        <textarea data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom" data-aos-duration="900" id="message" name="message" required></textarea>
                         <ul id="message-error-text">
                             <li id="error-text"></li>
                         </ul>
                     
-                        <button type="submit" onclick="enviar(event)">Enviar</button>
+                        <div data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="900">
+                            <button type="submit" onclick="enviar(event)">Enviar</button>
+                        </div>
                     </form>
             </div>
         </section>
@@ -121,6 +129,15 @@
         </section>
     </footer>
 
+    <!-- Archivo Js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Librería de animaciones -->
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Mi script -->
     <script src="js/scripts.js"></script>
     <script src="js/contact.js"></script>
 
