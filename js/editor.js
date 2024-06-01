@@ -2,6 +2,7 @@ window.onload = function() {
   updateLineNumbersHtml();
   updateLineNumbersCss();
   updateLineNumbersJs();
+  preloadImages();
 };
 
 let imgBtn = document.querySelector("[data-id='img-btn']");
@@ -20,16 +21,12 @@ let images = [
   "url('https://raw.githubusercontent.com/AngelIsaiSzr/Resources/main/images/background-contact.jpg')"
 ];
 
-// Función para pre-cargar las imágenes
 function preloadImages() {
   images.forEach(image => {
     const img = new Image();
-    img.src = image.slice(4, -1); // Extraer la URL sin los delimitadores 'url()'
+    img.src = image.slice(4, -1);
   });
 }
-
-// Llamar a la función de pre-carga al cargar la página
-window.addEventListener('load', preloadImages);
 
 let currentImage = 0;
 

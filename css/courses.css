@@ -221,7 +221,6 @@ body {
     --bg-cta: #FFF;
     --color-cta: #000000;
     --color-items: #000000;
-    transition: transform 0.2s ease-in-out;
 }
 
 .course__element--active {
