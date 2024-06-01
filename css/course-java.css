@@ -474,7 +474,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    align-self: flex-end;
+    align-self: center;
     margin-left: 10px;
     transition: transform .3s;
 }
