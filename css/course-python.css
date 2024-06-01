@@ -543,6 +543,10 @@ body {
 /* Media queries */
 
 @media (max-width:900px) {
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
+    
     :root {
         --height-shape: 14em;
     }

@@ -538,6 +538,10 @@ body {
 /* Media queries */
 
 @media (max-width:800px) {
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
+    
     .nav {
         --padding-container: 0;
     }

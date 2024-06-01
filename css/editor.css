@@ -31,20 +31,6 @@ body {
 
 ::-webkit-scrollbar {
     width: 0;
-    background-color: #f0eded;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #a2a2a2;
-    border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background-color: #aaa;
-}
-
-::-webkit-scrollbar-corner {
-    background-color: #f5f5f5;
 }
 
 /* Nav */

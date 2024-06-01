@@ -414,6 +414,10 @@ body {
 }
 
 @media (min-width:885px) {
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
+    
     .modal__texts {
         text-align: center;
         width: 60%;
