@@ -129,7 +129,7 @@ body {
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: max-content;
-    gap: 2em;
+    gap: 1em;
 }
 
 .nav__items {
