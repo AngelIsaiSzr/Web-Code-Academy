@@ -326,6 +326,46 @@ body {
     transition: opacity 1.5s ease-in-out;
 }
 
+.testimony__picture {
+    position: relative;
+}
+
+.testimony__picture-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.testimony__picture:hover .testimony__picture-overlay {
+    opacity: 1;
+}
+
+.testimony__picture-icon {
+    background: #ffffff;
+    color: #0a0808;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.testimony__picture-icon:hover {
+    transform: scale(1.2);
+}
+
 .testimony__img {
     width: 250px;
     height: 250px;
@@ -460,6 +500,7 @@ body {
     .nav {
         --padding-container: 0;
     }
+
     .hero::before {
         background-position: 900px;
     }
