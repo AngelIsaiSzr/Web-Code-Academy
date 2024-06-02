@@ -29,6 +29,25 @@ function preloadImages() {
 
 window.addEventListener('load', preloadImages);
 
+const titlesPage = [
+  "¡Es hora de programar! 💻",
+  "¡Crea algo increíble! 🚀",
+  "¡Sigue codificando! 🎨",
+  "¡Inspírate y programa! 💡",
+  "¡Domina el HTML, CSS y JS! 🔥",
+  "¡Descubre nuevas posibilidades! 🌟",
+  "¡Haz realidad tus ideas! 💻",
+  "¡Sé un maestro del código! 🎯"
+];
+
+window.addEventListener('blur', function () {
+  document.title = titlesPage[Math.floor(Math.random() * titlesPage.length)];
+});
+
+window.addEventListener('focus', function () {
+  document.title = 'Web Code Academy';
+});
+
 let currentImage = 0;
 
 function run() {
