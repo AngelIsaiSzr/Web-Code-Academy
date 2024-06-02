@@ -353,6 +353,7 @@ body {
 
 .testimony__picture:hover .testimony__picture-overlay {
     opacity: 1;
+    cursor: pointer;
 }
 
 .testimony__picture-icon {
