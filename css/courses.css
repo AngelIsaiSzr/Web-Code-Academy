@@ -456,7 +456,7 @@ body {
 }
 
 .questions__show {
-    text-align: left;
+    text-align: justify;
     height: 0;
     transition: height .3s;
 }
