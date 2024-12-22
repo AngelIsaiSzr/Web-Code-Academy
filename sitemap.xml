@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>https://www.web-code-academy.com/</loc>
+    <lastmod>2024-12-22</lastmod>
+    <priority>1.00</priority>
+  </sitemap>
+  <sitemap>
+    <loc>https://www.web-code-academy.com/index.html</loc>
+    <lastmod>2024-12-20</lastmod>
+    <priority>0.90</priority>
+  </sitemap>
+  <sitemap>
+    <loc>https://www.web-code-academy.com/courses.html</loc>
+    <lastmod>2024-12-20</lastmod>
+    <priority>0.80</priority>
+  </sitemap>
+  <sitemap>
+    <loc>https://www.web-code-academy.com/editor.html</loc>
+    <lastmod>2024-12-15</lastmod>
+    <priority>0.70</priority>
+  </sitemap>
+  <sitemap>
+    <loc>https://www.web-code-academy.com/about.html</loc>
+    <lastmod>2024-12-20</lastmod>
+    <priority>0.60</priority>
+  </sitemap>
+  <sitemap>
+    <loc>https://www.web-code-academy.com/contact.html</loc>
+    <lastmod>2024-12-18</lastmod>
+    <priority>0.50</priority>
+  </sitemap>
+</sitemapindex>
