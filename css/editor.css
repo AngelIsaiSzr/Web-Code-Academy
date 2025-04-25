@@ -12,6 +12,10 @@ body {
     z-index: -1;
     background-color: #000;
     transition: opacity 0.5s ease-in-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .hero {
