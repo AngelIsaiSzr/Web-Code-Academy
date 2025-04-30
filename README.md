@@ -1,7 +1,5 @@
 # Web Code Academy (Legacy)
 
-![Web Code Academy Logo](images/logo.png)
-
 ## Descripción
 
 Web Code Academy es una plataforma educativa diseñada para ofrecer cursos de programación web de alta calidad. Esta versión legacy fue construida utilizando HTML, CSS y JavaScript vanilla, sentando las bases para la versión moderna actual.
